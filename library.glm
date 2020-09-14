@@ -1,0 +1,157 @@
+// IEEE 37 configuration parameters of the feeder
+// Copyright (C) 2019, Stanford University
+// Author: aivanova@slac.stanford.edu
+object underground_line_conductor {
+	name underground_line_conductor_7210;
+	conductor_resistance 0.105000;
+	longitude -102.759313837;
+	shield_resistance 0.000000;
+	neutral_gmr 0.003310;
+	outer_diameter 1.980000;
+	neutral_strands 20.000000;
+	neutral_resistance 5.903000;
+	latitude 32.9899235325;
+	neutral_diameter 0.102000;
+	conductor_diameter 1.150000;
+	shield_gmr 0.000000;
+	conductor_gmr 0.036800;
+};
+
+object underground_line_conductor {
+	name underground_line_conductor_7220;
+	conductor_resistance 0.206000;
+	longitude -102.758460097;
+	shield_resistance 0.000000;
+	neutral_gmr 0.002620;
+	outer_diameter 1.560000;
+	neutral_strands 16.000000;
+	neutral_resistance 9.375000;
+	latitude 32.9907119397;
+	neutral_diameter 0.081000;
+	conductor_diameter 0.813000;
+	shield_gmr 0.000000;
+	conductor_gmr 0.026000;
+};
+
+object underground_line_conductor {
+	name underground_line_conductor_7230;
+	conductor_resistance 0.769000;
+	longitude -102.761144011;
+	shield_resistance 0.000000;
+	neutral_gmr 0.002080;
+	outer_diameter 1.100000;
+	neutral_strands 7.000000;
+	neutral_resistance 14.872000;
+	latitude 32.9906085276;
+	neutral_diameter 0.064000;
+	conductor_diameter 0.414000;
+	shield_gmr 0.000000;
+	conductor_gmr 0.012500;
+};
+
+object underground_line_conductor {
+	name underground_line_conductor_7240;
+	conductor_resistance 1.540000;
+	longitude -102.762038648;
+	shield_resistance 0.000000;
+	neutral_gmr 0.002080;
+	outer_diameter 0.980000;
+	neutral_strands 6.000000;
+	neutral_resistance 14.872000;
+	latitude 32.9905740425;
+	neutral_diameter 0.064000;
+	conductor_diameter 0.292000;
+	shield_gmr 0.000000;
+	conductor_gmr 0.008830;
+};
+
+object line_spacing {
+	distance_BC 0.500000;
+	name line_spacing_515;
+	distance_CN 0.000000;
+	distance_AN 0.000000;
+	distance_AB 0.500000;
+	distance_AC 1.000000;
+	longitude -102.759404523;
+	latitude 32.9860865084;
+	distance_BN 0.000000;
+};
+
+object line_configuration {
+	name line_configuration_7211;
+	spacing line_spacing_515;
+	longitude -102.763579429;
+	latitude 32.9914322327;
+	conductor_A underground_line_conductor_7210;
+	conductor_C underground_line_conductor_7210;
+	conductor_B underground_line_conductor_7210;
+};
+
+object line_configuration {
+	name line_configuration_7221;
+	spacing line_spacing_515;
+	longitude -102.760299218;
+	latitude 32.9915616506;
+	conductor_A underground_line_conductor_7220;
+	conductor_C underground_line_conductor_7220;
+	conductor_B underground_line_conductor_7220;
+};
+
+object line_configuration {
+	name line_configuration_7231;
+	spacing line_spacing_515;
+	longitude -102.75674634;
+	latitude 32.986661719;
+	conductor_A underground_line_conductor_7230;
+	conductor_C underground_line_conductor_7230;
+	conductor_B underground_line_conductor_7230;
+};
+
+object line_configuration {
+	name line_configuration_7241;
+	spacing line_spacing_515;
+	longitude -102.757588015;
+	latitude 32.991162412;
+	conductor_A underground_line_conductor_7240;
+	conductor_C underground_line_conductor_7240;
+	conductor_B underground_line_conductor_7240;
+};
+
+
+object transformer_configuration {
+	power_rating 500;
+	primary_voltage 2771.28;
+	install_type PADMOUNT;
+	secondary_voltage 480;
+	connect_type 2;
+	longitude -102.762858197;
+	resistance 0.09;
+	reactance 1.81;
+	latitude 32.9891565153;
+	name transformer_configuration_400;
+};
+
+object regulator_configuration {
+	power_transducer_ratio 40;
+	connect_type 2;
+	Type A;
+	band_width 2.0;
+	compensator_x_setting_A 3.0;
+	time_delay 30.0;
+	compensator_x_setting_B 3.0;
+	regulation 0.10;
+	latitude 32.9891233616;
+	compensator_r_setting_B 1.5;
+	compensator_r_setting_A 1.5;
+	band_center 122.000;
+	PT_phase "ABC";
+	lower_taps 16;
+	Control MANUAL;
+	raise_taps 16;
+	name regulator_configuration_79978101;
+	current_transducer_ratio 350;
+	tap_pos_B 4;
+	CT_phase "ABC";
+	longitude -102.760166922;
+	tap_pos_A 7;
+};

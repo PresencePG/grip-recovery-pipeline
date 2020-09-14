@@ -1,0 +1,71 @@
+#define STARTTIME="2020-04-06T12:00:00-00:00"
+#define STOPTIME="2020-04-06T12:05:00-00:00"
+#define RECORDINTERVAL="1"
+#define TMY3_FILE="data/CA-San_Francisco_Intl_Ap.tmy3"
+
+
+    #define climate_object="yes"
+
+    #define LOADS="on" // enabling explicit loads
+    #define SOLAR="on"
+    #set dateformat=ISO8601
+    //#define PVPROB //enabling a distribution of houses with and without solar
+    //if PVPROB is not defined assumes if SOLAR=on all houses have PV panels
+    //#define PVAREA=400 sf //area of each PV panel
+
+    // SETTINGS
+    //#set relax_naming_rules=1;
+    clock {
+    	//timezone ${TIMEZONE};
+    	starttime "${STARTTIME}";
+    	stoptime "${STOPTIME}";
+    };
+
+    // Import powerflow module
+    module powerflow {
+    	solver_method FBS;
+    };
+
+    // Import generator module for solar and inverter
+    module generators;
+
+    // Import climate module for solar weather data
+    module climate;
+
+    // IMPORT PYTHON MODULE
+    module ES_controller;
+    //module ES_controller_with_noise;
+
+    // module for recorder objects:
+    module tape;
+
+    // INCLUDED FILES
+    #include "library.glm"
+    #include "feeder.glm"
+    #include "loads.glm"
+    //#include "explicit_loads.glm"
+    #include "ESCs.glm"
+
+    #ifdef climate_object
+    object climate {
+        name climate_obj;
+        tmyfile ${TMY3_FILE};
+    }
+    #endif // climate object
+
+    object regulator {
+    	name reg_799781;
+    	to node_781;
+    	phases "ABC";
+    	from node_799;
+    	configuration regulator_configuration_79978101;
+    };
+
+    // Recorder to save outputs in CSV file (here only used to create a fixed timestep, recordings are from python module)
+    object recorder {
+        parent line_701_702;
+    	property "power_in";
+        interval ${RECORDINTERVAL};
+    	file "recorder_output.csv";
+    }
+    

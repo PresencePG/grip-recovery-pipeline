@@ -1,0 +1,98 @@
+// IEEE 37 definition of explicit loads
+// Copyright (C) 2019, Stanford University
+// Author: aivanova@slac.stanford.edu
+module residential;
+object transformer_configuration {
+	name xfmr_config;
+	connect_type SINGLE_PHASE_CENTER_TAPPED;
+	install_type POLETOP;
+	powerA_rating 75;
+	powerB_rating 75;
+	powerC_rating 75;
+	primary_voltage 2771.28 V;
+	secondary_voltage 120 V;
+	impedance 0.006+0.0136j;
+}
+
+global int32 SEQ_CUSTID 0;
+#set allow_reinclude=true
+
+#include using(AREA=A,LOADID=701,PHASE=A,COUNT=14) "house.glm"
+#include using(AREA=A,LOADID=701,PHASE=B,COUNT=14) "house.glm"
+#include using(AREA=A,LOADID=701,PHASE=C,COUNT=35) "house.glm"
+#include using(AREA=A,LOADID=712,PHASE=A,COUNT=1) "house.glm"
+#include using(AREA=A,LOADID=712,PHASE=B,COUNT=1) "house.glm"
+#include using(AREA=A,LOADID=712,PHASE=C,COUNT=9) "house.glm"
+#include using(AREA=A,LOADID=713,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=713,PHASE=B,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=713,PHASE=C,COUNT=9) "house.glm"
+#include using(AREA=A,LOADID=714,PHASE=A,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=714,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=714,PHASE=C,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=718,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=718,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=718,PHASE=C,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=720,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=720,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=720,PHASE=C,COUNT=9) "house.glm"
+#include using(AREA=A,LOADID=722,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=722,PHASE=B,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=722,PHASE=C,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=724,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=724,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=724,PHASE=C,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=725,PHASE=A,COUNT=5) "house.glm"
+#include using(AREA=A,LOADID=725,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=725,PHASE=C,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=727,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=727,PHASE=B,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=727,PHASE=C,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=728,PHASE=A,COUNT=5) "house.glm"
+#include using(AREA=A,LOADID=728,PHASE=B,COUNT=5) "house.glm"
+#include using(AREA=A,LOADID=728,PHASE=C,COUNT=5) "house.glm"
+#include using(AREA=A,LOADID=729,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=729,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=729,PHASE=C,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=730,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=730,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=730,PHASE=C,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=731,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=731,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=731,PHASE=C,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=732,PHASE=A,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=732,PHASE=B,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=732,PHASE=C,COUNT=5) "house.glm"
+#include using(AREA=A,LOADID=733,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=733,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=733,PHASE=C,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=734,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=734,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=734,PHASE=C,COUNT=8) "house.glm"
+#include using(AREA=A,LOADID=735,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=735,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=735,PHASE=C,COUNT=8) "house.glm"
+#include using(AREA=A,LOADID=736,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=736,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=736,PHASE=C,COUNT=8) "house.glm"
+#include using(AREA=A,LOADID=737,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=737,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=737,PHASE=C,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=738,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=738,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=738,PHASE=C,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=740,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=740,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=740,PHASE=C,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=741,PHASE=A,COUNT=2) "house.glm"
+#include using(AREA=A,LOADID=741,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=741,PHASE=C,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=742,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=742,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=742,PHASE=C,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=744,PHASE=A,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=744,PHASE=B,COUNT=4) "house.glm"
+#include using(AREA=A,LOADID=744,PHASE=C,COUNT=4) "house.glm"
+
+
+
+#define NHOUSES=${SEQ_CUSTID}

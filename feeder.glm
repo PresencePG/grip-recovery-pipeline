@@ -1,0 +1,481 @@
+// IEEE 37 feeder
+// Copyright (C) 2019, Stanford University
+// Author: aivanova@slac.stanford.edu
+
+// LINES
+
+object underground_line {
+	phases "ABC";
+	from node_701;
+	name line_701_702;
+	to node_702;
+	length 960;
+	configuration line_configuration_7221;
+};
+
+//object switch {
+//    name switch_head;
+//    from node_701;
+//    to node_702;
+//    phases "ABC";
+//    status OPEN;
+//}
+
+object underground_line {
+	phases "ABC";
+	from node_702;
+	name line_702_705;
+	to node_705;
+	length 400;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_702;
+	name line_702_713;
+	to node_713;
+	length 360;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_702;
+	name line_702_703;
+	to node_703;
+	length 1320;
+	configuration line_configuration_7221;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_703;
+	name line_703_727;
+	to node_727;
+	length 240;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_703;
+	name line_703_730;
+	to node_730;
+	length 600;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_704;
+	name line_704_714;
+	to node_714;
+	length 80;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_704;
+	name line_704_720;
+	to node_720;
+	length 800;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_705;
+	name line_705_742;
+	to node_742;
+	length 320;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_705;
+	name line_705_712;
+	to node_712;
+	length 240;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_706;
+	name line_706_725;
+	to node_725;
+	length 280;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_707;
+	name line_707_724;
+	to node_724;
+	length 760;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_707;
+	name line_707_722;
+	to node_722;
+	length 120;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_708;
+	name line_708_733;
+	to node_733;
+	length 320;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_708;
+	name line_708_732;
+	to node_732;
+	length 320;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_709;
+	name line_709_731;
+	to node_731;
+	length 600;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_709;
+	name line_709_708;
+	to node_708;
+	length 320;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_710;
+	name line_710_735;
+	to node_735;
+	length 200;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_710;
+	name line_710_736;
+	to node_736;
+	length 1280;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_711;
+	name line_711_741;
+	to node_741;
+	length 400;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_711;
+	name line_711_740;
+	to node_740;
+	length 200;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_713;
+	name line_713_704;
+	to node_704;
+	length 520;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_714;
+	name line_714_718;
+	to node_718;
+	length 520;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_720;
+	name line_720_707;
+	to node_707;
+	length 920;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_720;
+	name line_720_706;
+	to node_706;
+	length 600;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_727;
+	name line_727_744;
+	to node_744;
+	length 280;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_730;
+	name line_730_709;
+	to node_709;
+	length 200;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_733;
+	name line_733_734;
+	to node_734;
+	length 560;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_734;
+	name line_734_737;
+	to node_737;
+	length 640;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_734;
+	name line_734_710;
+	to node_710;
+	length 520;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_737;
+	name line_737_738;
+	to node_738;
+	length 400;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_738;
+	name line_738_711;
+	to node_711;
+	length 400;
+	configuration line_configuration_7231;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_744;
+	name line_744_728;
+	to node_728;
+	length 200;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_744;
+	name line_744_729;
+	to node_729;
+	length 280;
+	configuration line_configuration_7241;
+};
+
+object underground_line {
+	phases "ABC";
+	from node_781;
+	name line_781_701;
+	to node_701;
+	length 1850;
+	configuration line_configuration_7211;
+};
+
+// NODES
+
+object node {
+	phases "ABC";
+	name node_799;
+	bustype SWING;
+	longitude -102.758353147;
+	voltage_B -2400.000000-1385.640646j;
+	voltage_C 0.000000+2771.281292j;
+	voltage_A 2400.000000-1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.9887399286;
+};
+
+object node {
+	phases "ABC";
+	name node_781;
+	longitude -102.762094843;
+	voltage_B -2400.0000-1385.640646j;
+	voltage_C 0.0000+2771.281292j;
+	voltage_A 2400.0000-1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.9858857731;
+};
+
+object node {
+	phases "ABC";
+	name node_702;
+	longitude -102.761568238;
+	voltage_B -2400.000000 -1385.640646j;
+	voltage_C 0.000000+2771.281292j;
+	voltage_A 2400.000000 -1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.9872221121;
+};
+
+object node {
+	phases "ABC";
+	name node_703;
+	longitude -102.760650421;
+	voltage_B -2400.000000 -1385.640646j;
+	voltage_C 0.000000+2771.281292j;
+	voltage_A 2400.000000 -1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.9868975384;
+};
+
+object node {
+	phases "ABC";
+	name node_704;
+	longitude -102.763453447;
+	voltage_B -2400.000000 -1385.640646j;
+	voltage_C 0.000000+2771.281292j;
+	voltage_A 2400.000000 -1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.9873902916;
+};
+
+object node {
+	phases "ABC";
+	name node_705;
+	longitude -102.761560065;
+	voltage_B -2400.000000 -1385.640646j;
+	voltage_C 0.000000+2771.281292j;
+	voltage_A 2400.000000 -1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.9879642735;
+};
+
+object node {
+	phases "ABC";
+	name node_706;
+	longitude -102.765018887;
+	voltage_B -2400.000000 -1385.640646j;
+	voltage_C 0.000000+2771.281292j;
+	voltage_A 2400.000000 -1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.9874418882;
+};
+
+object node {
+	phases "ABC";
+	name node_707;
+	longitude -102.764765124;
+	voltage_B -2400.000000 -1385.640646j;
+	voltage_C 0.000000+2771.281292j;
+	voltage_A 2400.000000 -1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.9863675094;
+};
+
+object node {
+	phases "ABC";
+	name node_708;
+	longitude -102.758167328;
+	voltage_B -2400.000000 -1385.640646j;
+	voltage_C 0.000000+2771.281292j;
+	voltage_A 2400.000000 -1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.987820678;
+};
+
+object node {
+	phases "ABC";
+	name node_709;
+	longitude -102.758968529;
+	voltage_B -2400.000000 -1385.640646j;
+	voltage_C 0.000000+2771.281292j;
+	voltage_A 2400.000000 -1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.9874749269;
+};
+
+object node {
+	phases "ABC";
+	name node_710;
+	longitude -102.755845584;
+	voltage_B -2400.000000 -1385.640646j;
+	voltage_C 0.000000+2771.281292j;
+	voltage_A 2400.000000 -1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.9881439298;
+};
+
+object node {
+	phases "ABC";
+	name node_711;
+	longitude -102.755681285;
+	voltage_B -2400.000000 -1385.640646j;
+	voltage_C 0.000000+2771.281292j;
+	voltage_A 2400.000000 -1385.640646j;
+	nominal_voltage 2771.28 V;
+	latitude 32.9905827498;
+};
+
+object transformer {
+	to node_775;
+	phases "ABC";
+	from node_709;
+	configuration transformer_configuration_400;
+};
+
+object node {
+	phases "ABC";
+	name node_775;
+	longitude -102.757620464;
+	voltage_B -240.000000 -138.564065j;
+	voltage_C -0.000000+277.128129j;
+	voltage_A 240.000000 -138.564065j;
+	nominal_voltage 480;
+	latitude 32.9862497608;
+};
