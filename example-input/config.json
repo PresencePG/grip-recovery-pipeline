@@ -1,0 +1,50 @@
+{
+  "starttime": "2020-04-06T12:00:00+00:00",
+  "stoptime": "2020-04-06T12:05:00+00:00",
+  "controllers": [
+    {
+      "node_name": "node_703",
+      "controller_phase": "A",
+      "controller_speed": 100000,
+      "controller_frequency": 0.102401714395371,
+      "real_power_capacity_limit": 200,
+      "real_power_probing_amplitude": 10,
+      "reactive_power_capacity_limit": 200,
+      "reactive_power_probing_amplitude": 10,
+      "apparent_power_capacity_limit": 200,
+      "apparent_power_probing_amplitude": 10
+    },
+    {
+      "node_name": "node_703",
+      "controller_phase": "B",
+      "controller_speed": 100000,
+      "controller_frequency": 0.101721296797781,
+      "real_power_capacity_limit": 200,
+      "real_power_probing_amplitude": 10,
+      "reactive_power_capacity_limit": 200,
+      "reactive_power_probing_amplitude": 10,
+      "apparent_power_capacity_limit": 200,
+      "apparent_power_probing_amplitude": 10
+    },
+    {
+      "node_name": "node_704",
+      "controller_phase": "C",
+      "controller_speed": 100000,
+      "controller_frequency": 0.107180237477742,
+      "real_power_capacity_limit": 200,
+      "real_power_probing_amplitude": 10,
+      "reactive_power_capacity_limit": 200,
+      "reactive_power_probing_amplitude": 10,
+      "apparent_power_capacity_limit": 200,
+      "apparent_power_probing_amplitude": 10
+    }
+  ],
+  "optimization_targets": [
+    {
+      "node_1_name": "node_702",
+      "node_2_name": "node_703",
+      "weighting_factor": 1
+    }
+  ],
+  "weather_filename": "CA-San_Francisco_Intl_Ap.tmy3"
+}
